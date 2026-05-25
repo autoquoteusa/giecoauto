@@ -325,22 +325,7 @@
                 <p>&copy; 2026 GiecoUS. All Rights Reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms</a></p>        
             </div>    
         </div>
-    </div> <div id="jnj-forced-popup">
-        <div class="popup-box">
-            <span class="close-popup" onclick="closePopup()">&times;</span>
-            
-            <img src="logo-insurance-768x432.jpg" alt="Geico Gecko Logo" class="gecko-img">
-            
-            <h2 style="color:#003366; margin-bottom:10px;">Licensed Agents Available</h2>
-            <p style="color:#555; margin-bottom:20px;">Licensed agents are standing by to lock in your lowest rate. Please call to unlock your quotes!</p>
-            
-            <a href="tel:8002461673" class="btn-call-popup">
-                <i class="fas fa-phone-alt"></i> (800) 246-1673
-            </a>
 
-        
-        </div>
-    </div>
     
     <div class="sticky-call-bar">        
         <a href="tel:8002461673" class="sticky-call-btn">            
@@ -348,28 +333,6 @@
         </a>    
     </div>
 
-    <script>
-        // Function to smoothly close the popup and remove the blur
-        function closePopup() {
-            var popup = document.getElementById('jnj-forced-popup');
-            var content = document.getElementById('content-wrapper');
-            
-            popup.style.opacity = '0';
-            setTimeout(function() {
-                popup.style.display = 'none';
-                content.classList.remove('is-blurred');
-            }, 300); // Wait for the fade out to finish
-        }
 
-        // Allow users to close the popup with the Escape key
-        window.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape') {
-                closePopup();
-            }
-        });
-
-        // Disable right-click to prevent users from deleting the element via Inspect
-        document.addEventListener('contextmenu', event => event.preventDefault());
-    </script>
 </body>
 </html>
